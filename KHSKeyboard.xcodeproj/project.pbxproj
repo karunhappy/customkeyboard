@@ -13,7 +13,35 @@
 		EFD2840623477EAF008EEBCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFD2840423477EAF008EEBCB /* Main.storyboard */; };
 		EFD2840823477EB1008EEBCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFD2840723477EB1008EEBCB /* Assets.xcassets */; };
 		EFD2840B23477EB1008EEBCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFD2840923477EB1008EEBCB /* LaunchScreen.storyboard */; };
+		EFD2841923477F64008EEBCB /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD2841823477F64008EEBCB /* KeyboardViewController.swift */; };
+		EFD2841D23477F64008EEBCB /* KHS.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EFD2841623477F64008EEBCB /* KHS.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EFD2842423477FA8008EEBCB /* KeboardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD2842223477FA8008EEBCB /* KeboardButton.swift */; };
+		EFD2842523477FA8008EEBCB /* KeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFD2842323477FA8008EEBCB /* KeyboardView.xib */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EFD2841B23477F64008EEBCB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFD283F323477EAF008EEBCB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFD2841523477F64008EEBCB;
+			remoteInfo = KHS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EFD2842123477F64008EEBCB /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EFD2841D23477F64008EEBCB /* KHS.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		EFD283FB23477EAF008EEBCB /* KHSKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KHSKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +52,22 @@
 		EFD2840723477EB1008EEBCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFD2840A23477EB1008EEBCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EFD2840C23477EB1008EEBCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFD2841623477F64008EEBCB /* KHS.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = KHS.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFD2841823477F64008EEBCB /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		EFD2841A23477F64008EEBCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFD2842223477FA8008EEBCB /* KeboardButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeboardButton.swift; sourceTree = "<group>"; };
+		EFD2842323477FA8008EEBCB /* KeyboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyboardView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		EFD283F823477EAF008EEBCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFD2841323477F64008EEBCB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				EFD283FD23477EAF008EEBCB /* KHSKeyboard */,
+				EFD2841723477F64008EEBCB /* KHS */,
 				EFD283FC23477EAF008EEBCB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				EFD283FB23477EAF008EEBCB /* KHSKeyboard.app */,
+				EFD2841623477F64008EEBCB /* KHS.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +109,17 @@
 			path = KHSKeyboard;
 			sourceTree = "<group>";
 		};
+		EFD2841723477F64008EEBCB /* KHS */ = {
+			isa = PBXGroup;
+			children = (
+				EFD2841823477F64008EEBCB /* KeyboardViewController.swift */,
+				EFD2841A23477F64008EEBCB /* Info.plist */,
+				EFD2842223477FA8008EEBCB /* KeboardButton.swift */,
+				EFD2842323477FA8008EEBCB /* KeyboardView.xib */,
+			);
+			path = KHS;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +130,34 @@
 				EFD283F723477EAF008EEBCB /* Sources */,
 				EFD283F823477EAF008EEBCB /* Frameworks */,
 				EFD283F923477EAF008EEBCB /* Resources */,
+				EFD2842123477F64008EEBCB /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				EFD2841C23477F64008EEBCB /* PBXTargetDependency */,
 			);
 			name = KHSKeyboard;
 			productName = KHSKeyboard;
 			productReference = EFD283FB23477EAF008EEBCB /* KHSKeyboard.app */;
 			productType = "com.apple.product-type.application";
+		};
+		EFD2841523477F64008EEBCB /* KHS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFD2841E23477F64008EEBCB /* Build configuration list for PBXNativeTarget "KHS" */;
+			buildPhases = (
+				EFD2841223477F64008EEBCB /* Sources */,
+				EFD2841323477F64008EEBCB /* Frameworks */,
+				EFD2841423477F64008EEBCB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KHS;
+			productName = KHS;
+			productReference = EFD2841623477F64008EEBCB /* KHS.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +170,9 @@
 				ORGANIZATIONNAME = "Karun Aggarwal";
 				TargetAttributes = {
 					EFD283FA23477EAF008EEBCB = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					EFD2841523477F64008EEBCB = {
 						CreatedOnToolsVersion = 11.1;
 					};
 				};
@@ -116,6 +191,7 @@
 			projectRoot = "";
 			targets = (
 				EFD283FA23477EAF008EEBCB /* KHSKeyboard */,
+				EFD2841523477F64008EEBCB /* KHS */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +204,14 @@
 				EFD2840B23477EB1008EEBCB /* LaunchScreen.storyboard in Resources */,
 				EFD2840823477EB1008EEBCB /* Assets.xcassets in Resources */,
 				EFD2840623477EAF008EEBCB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFD2841423477F64008EEBCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFD2842523477FA8008EEBCB /* KeyboardView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +228,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EFD2841223477F64008EEBCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFD2842423477FA8008EEBCB /* KeboardButton.swift in Sources */,
+				EFD2841923477F64008EEBCB /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EFD2841C23477F64008EEBCB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFD2841523477F64008EEBCB /* KHS */;
+			targetProxy = EFD2841B23477F64008EEBCB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		EFD2840423477EAF008EEBCB /* Main.storyboard */ = {
@@ -283,6 +384,7 @@
 		EFD2841023477EB1008EEBCB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9QK4RD5254;
@@ -301,6 +403,7 @@
 		EFD2841123477EB1008EEBCB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9QK4RD5254;
@@ -311,6 +414,44 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = KHS.KHSKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EFD2841F23477F64008EEBCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9QK4RD5254;
+				INFOPLIST_FILE = KHS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KHS.KHSKeyboard.KHS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EFD2842023477F64008EEBCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9QK4RD5254;
+				INFOPLIST_FILE = KHS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KHS.KHSKeyboard.KHS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -333,6 +474,15 @@
 			buildConfigurations = (
 				EFD2841023477EB1008EEBCB /* Debug */,
 				EFD2841123477EB1008EEBCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFD2841E23477F64008EEBCB /* Build configuration list for PBXNativeTarget "KHS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFD2841F23477F64008EEBCB /* Debug */,
+				EFD2842023477F64008EEBCB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

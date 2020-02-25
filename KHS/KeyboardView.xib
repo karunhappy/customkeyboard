@@ -1,0 +1,755 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KeyboardViewController" customModule="KHS" customModuleProvider="target">
+            <connections>
+                <outlet property="stackviewMain" destination="LxV-Xv-1zg" id="zoN-nw-xOI"/>
+                <outlet property="viewSymbols" destination="uVa-qm-ijJ" id="CK5-YN-pnJ"/>
+                <outletCollection property="buttonsCollection" destination="rlk-9E-JDc" collectionClass="NSMutableArray" id="qf9-cY-JXb"/>
+                <outletCollection property="buttonsCollection" destination="meE-rP-nG6" collectionClass="NSMutableArray" id="sJk-hN-lJa"/>
+                <outletCollection property="buttonsCollection" destination="yo0-DQ-ZM2" collectionClass="NSMutableArray" id="BsV-eT-eXS"/>
+                <outletCollection property="buttonsCollection" destination="YSy-rr-8Mx" collectionClass="NSMutableArray" id="sCH-uB-cNq"/>
+                <outletCollection property="buttonsCollection" destination="01c-SV-DAt" collectionClass="NSMutableArray" id="bDj-uy-NoY"/>
+                <outletCollection property="buttonsCollection" destination="Kis-7d-dYz" collectionClass="NSMutableArray" id="wBs-3E-mzG"/>
+                <outletCollection property="buttonsCollection" destination="CZJ-DF-OYk" collectionClass="NSMutableArray" id="3hS-Ti-xW3"/>
+                <outletCollection property="buttonsCollection" destination="h7G-Ih-mTx" collectionClass="NSMutableArray" id="N9g-X5-gl8"/>
+                <outletCollection property="buttonsCollection" destination="k57-5U-6BC" collectionClass="NSMutableArray" id="c3A-hi-MLb"/>
+                <outletCollection property="buttonsCollection" destination="9IC-wy-O1F" collectionClass="NSMutableArray" id="vC8-Fs-1dy"/>
+                <outletCollection property="buttonsCollection" destination="EZ3-Cs-1fd" collectionClass="NSMutableArray" id="hcO-4Y-tZV"/>
+                <outletCollection property="buttonsCollection" destination="1tG-Qu-d3g" collectionClass="NSMutableArray" id="Gas-8B-7LU"/>
+                <outletCollection property="buttonsCollection" destination="w24-lR-XoC" collectionClass="NSMutableArray" id="7yJ-JD-ZLa"/>
+                <outletCollection property="buttonsCollection" destination="3pF-UT-5pX" collectionClass="NSMutableArray" id="bkq-Gz-yeu"/>
+                <outletCollection property="buttonsCollection" destination="nDS-xz-9HA" collectionClass="NSMutableArray" id="iql-mn-lYi"/>
+                <outletCollection property="buttonsCollection" destination="nFz-0a-ffT" collectionClass="NSMutableArray" id="dWR-UI-vg5"/>
+                <outletCollection property="buttonsCollection" destination="fxe-Db-eAy" collectionClass="NSMutableArray" id="bUb-jc-Rwt"/>
+                <outletCollection property="buttonsCollection" destination="lbC-sf-x8J" collectionClass="NSMutableArray" id="eqM-JG-S8j"/>
+                <outletCollection property="buttonsCollection" destination="Mcr-67-Tb6" collectionClass="NSMutableArray" id="GqQ-Mp-VJO"/>
+                <outletCollection property="buttonsCollection" destination="kYi-Hg-MpW" collectionClass="NSMutableArray" id="2rK-TY-vEl"/>
+                <outletCollection property="buttonsCollection" destination="aul-Uk-BdB" collectionClass="NSMutableArray" id="EoC-bQ-9nc"/>
+                <outletCollection property="buttonsCollection" destination="6OY-fl-RDC" collectionClass="NSMutableArray" id="kKN-jW-NhX"/>
+                <outletCollection property="buttonsCollection" destination="aBp-h1-ih6" collectionClass="NSMutableArray" id="5TS-Lb-qY7"/>
+                <outletCollection property="buttonsCollection" destination="u9M-Ek-byv" collectionClass="NSMutableArray" id="NmZ-0z-Oy0"/>
+                <outletCollection property="buttonsCollection" destination="GvR-kH-h6E" collectionClass="NSMutableArray" id="OOv-OC-7i8"/>
+                <outletCollection property="buttonsCollection" destination="mzl-0F-hSP" collectionClass="NSMutableArray" id="fvf-qQ-S8B"/>
+                <outletCollection property="buttonsCollection" destination="3b0-cC-E85" collectionClass="NSMutableArray" id="uSR-yj-gP1"/>
+                <outletCollection property="buttonsCollection" destination="4fD-O7-dpS" collectionClass="NSMutableArray" id="OTs-ba-Pap"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="225"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zwc-px-fY8">
+                    <rect key="frame" x="0.0" y="5" width="414" height="220"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="V78-WJ-pV5" userLabel="NumStack View">
+                            <rect key="frame" x="5" y="0.0" width="404" height="40"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BLB-NM-91z" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="36" height="40"/>
+                                    <state key="normal" title="1"/>
+                                    <connections>
+                                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="vdK-t4-gT5"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmb-F1-Rcm" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                    <rect key="frame" x="41" y="0.0" width="36" height="40"/>
+                                    <state key="normal" title="2"/>
+                                    <connections>
+                                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="PuP-zG-tbo"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vGd-lL-FQ0" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                    <rect key="frame" x="82" y="0.0" width="35.5" height="40"/>
+                                    <state key="normal" title="3"/>
+                                    <connections>
+                                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="cuE-Uc-iQt"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bKK-1Q-grl" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                    <rect key="frame" x="122.5" y="0.0" width="36" height="40"/>
+                                    <state key="normal" title="4"/>
+                                    <connections>
+                                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="nWp-hT-owU"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZYR-Qd-LqF" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                    <rect key="frame" x="163.5" y="0.0" width="36" height="40"/>
+                                    <state key="normal" title="5"/>
+                                    <connections>
+                                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="5Vf-cl-5RW"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="48p-Dr-BaE" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                    <rect key="frame" x="204.5" y="0.0" width="36" height="40"/>
+                                    <state key="normal" title="6"/>
+                                    <connections>
+                                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="iNp-nT-vIy"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fun-5d-W6F" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                    <rect key="frame" x="245.5" y="0.0" width="36" height="40"/>
+                                    <state key="normal" title="7"/>
+                                    <connections>
+                                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="fvX-Ny-Y72"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7y0-U7-Jc4" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                    <rect key="frame" x="286.5" y="0.0" width="35.5" height="40"/>
+                                    <state key="normal" title="8"/>
+                                    <connections>
+                                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="FU7-Kn-WYk"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Lz-xq-yZ3" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                    <rect key="frame" x="327" y="0.0" width="36" height="40"/>
+                                    <state key="normal" title="9"/>
+                                    <connections>
+                                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="VzG-eg-a3p"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nff-Zd-cJi" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                    <rect key="frame" x="368" y="0.0" width="36" height="40"/>
+                                    <state key="normal" title="0"/>
+                                    <connections>
+                                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="RJB-LA-1u3"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="pny-bX-pxP"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="LxV-Xv-1zg">
+                            <rect key="frame" x="5" y="45" width="404" height="175"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Zib-B0-MJm">
+                                    <rect key="frame" x="0.0" y="0.0" width="404" height="40"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="meE-rP-nG6" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="32" height="40"/>
+                                            <state key="normal" title="Q"/>
+                                            <connections>
+                                                <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="aKT-jP-NJB"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rlk-9E-JDc" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                            <rect key="frame" x="37" y="0.0" width="32.5" height="40"/>
+                                            <state key="normal" title="W"/>
+                                            <connections>
+                                                <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="QVE-s3-ORd"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yo0-DQ-ZM2" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                            <rect key="frame" x="74.5" y="0.0" width="32" height="40"/>
+                                            <state key="normal" title="E"/>
+                                            <connections>
+                                                <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="8FP-qx-LVT"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YSy-rr-8Mx" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                            <rect key="frame" x="111.5" y="0.0" width="32" height="40"/>
+                                            <state key="normal" title="R"/>
+                                            <connections>
+                                                <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="L1U-as-98W"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="01c-SV-DAt" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                            <rect key="frame" x="148.5" y="0.0" width="32.5" height="40"/>
+                                            <state key="normal" title="T"/>
+                                            <connections>
+                                                <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="0ZT-Ey-iU3"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kis-7d-dYz" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                            <rect key="frame" x="186" y="0.0" width="32" height="40"/>
+                                            <state key="normal" title="Y"/>
+                                            <connections>
+                                                <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="OCE-wL-lYa"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CZJ-DF-OYk" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                            <rect key="frame" x="223" y="0.0" width="32.5" height="40"/>
+                                            <state key="normal" title="U"/>
+                                            <connections>
+                                                <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="UNM-fl-IVZ"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h7G-Ih-mTx" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                            <rect key="frame" x="260.5" y="0.0" width="32" height="40"/>
+                                            <state key="normal" title="I"/>
+                                            <connections>
+                                                <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="orc-76-U2q"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k57-5U-6BC" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                            <rect key="frame" x="297.5" y="0.0" width="32" height="40"/>
+                                            <state key="normal" title="O"/>
+                                            <connections>
+                                                <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="6V7-Rv-mPf"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9IC-wy-O1F" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                            <rect key="frame" x="334.5" y="0.0" width="32.5" height="40"/>
+                                            <state key="normal" title="P"/>
+                                            <connections>
+                                                <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="Ds0-0t-N24"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3rA-BD-eQc" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                            <rect key="frame" x="372" y="0.0" width="32" height="40"/>
+                                            <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <state key="normal" image="delete.left" catalog="system"/>
+                                            <connections>
+                                                <action selector="buttonBackspaceAction:" destination="-1" eventType="touchUpInside" id="Ivu-1L-Cfw"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="rIl-3e-OlV"/>
+                                    </constraints>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="dwk-lS-TIz">
+                                    <rect key="frame" x="0.0" y="45" width="404" height="40"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EZ3-Cs-1fd" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="36" height="40"/>
+                                            <state key="normal" title="A"/>
+                                            <connections>
+                                                <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="822-FZ-Sme"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1tG-Qu-d3g" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                            <rect key="frame" x="41" y="0.0" width="36" height="40"/>
+                                            <state key="normal" title="S"/>
+                                            <connections>
+                                                <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="eGy-yg-m5l"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w24-lR-XoC" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                            <rect key="frame" x="82" y="0.0" width="35.5" height="40"/>
+                                            <state key="normal" title="D"/>
+                                            <connections>
+                                                <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="zzs-Uj-Ilr"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3pF-UT-5pX" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                            <rect key="frame" x="122.5" y="0.0" width="36" height="40"/>
+                                            <state key="normal" title="F"/>
+                                            <connections>
+                                                <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="mOU-tD-sdi"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nDS-xz-9HA" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                            <rect key="frame" x="163.5" y="0.0" width="36" height="40"/>
+                                            <state key="normal" title="G"/>
+                                            <connections>
+                                                <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="oxV-m9-M9e"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nFz-0a-ffT" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                            <rect key="frame" x="204.5" y="0.0" width="36" height="40"/>
+                                            <state key="normal" title="H"/>
+                                            <connections>
+                                                <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="R3q-qo-zbE"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fxe-Db-eAy" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                            <rect key="frame" x="245.5" y="0.0" width="36" height="40"/>
+                                            <state key="normal" title="J"/>
+                                            <connections>
+                                                <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="xYr-7Q-X4k"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lbC-sf-x8J" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                            <rect key="frame" x="286.5" y="0.0" width="35.5" height="40"/>
+                                            <state key="normal" title="K"/>
+                                            <connections>
+                                                <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="EAh-A4-dAm"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mcr-67-Tb6" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                            <rect key="frame" x="327" y="0.0" width="36" height="40"/>
+                                            <state key="normal" title="L"/>
+                                            <connections>
+                                                <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="paP-s0-LTl"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AJM-aQ-Dae" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                            <rect key="frame" x="368" y="0.0" width="36" height="40"/>
+                                            <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <state key="normal" image="return" catalog="system"/>
+                                            <connections>
+                                                <action selector="buttonReturnAction:" destination="-1" eventType="touchUpInside" id="VhS-xb-dUb"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="QlR-qj-oEb"/>
+                                    </constraints>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="1Kf-fK-7w9">
+                                    <rect key="frame" x="0.0" y="90" width="404" height="40"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kVO-eu-EfI" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="36" height="40"/>
+                                            <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <state key="normal" image="shift" catalog="system"/>
+                                            <state key="selected" image="shift.fill" catalog="system"/>
+                                            <connections>
+                                                <action selector="buttonShiftAction:" destination="-1" eventType="touchUpInside" id="gd3-pl-26q"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kYi-Hg-MpW" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                            <rect key="frame" x="41" y="0.0" width="36" height="40"/>
+                                            <state key="normal" title="Z"/>
+                                            <connections>
+                                                <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="9C0-GO-SOV"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aul-Uk-BdB" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                            <rect key="frame" x="82" y="0.0" width="35.5" height="40"/>
+                                            <state key="normal" title="X"/>
+                                            <connections>
+                                                <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="ivS-80-BKQ"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6OY-fl-RDC" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                            <rect key="frame" x="122.5" y="0.0" width="36" height="40"/>
+                                            <state key="normal" title="C"/>
+                                            <connections>
+                                                <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="op1-1d-3IZ"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aBp-h1-ih6" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                            <rect key="frame" x="163.5" y="0.0" width="36" height="40"/>
+                                            <state key="normal" title="V"/>
+                                            <connections>
+                                                <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="lKh-GJ-geM"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u9M-Ek-byv" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                            <rect key="frame" x="204.5" y="0.0" width="36" height="40"/>
+                                            <state key="normal" title="B"/>
+                                            <connections>
+                                                <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="qwZ-UD-frd"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GvR-kH-h6E" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                            <rect key="frame" x="245.5" y="0.0" width="36" height="40"/>
+                                            <state key="normal" title="N"/>
+                                            <connections>
+                                                <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="Q2z-rK-hl8"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mzl-0F-hSP" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                            <rect key="frame" x="286.5" y="0.0" width="35.5" height="40"/>
+                                            <state key="normal" title="M"/>
+                                            <connections>
+                                                <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="WYv-4B-3sF"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3b0-cC-E85" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                            <rect key="frame" x="327" y="0.0" width="36" height="40"/>
+                                            <state key="normal" title="O"/>
+                                            <connections>
+                                                <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="5mE-Oa-v76"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fD-O7-dpS" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                            <rect key="frame" x="368" y="0.0" width="36" height="40"/>
+                                            <state key="normal" title="P"/>
+                                            <connections>
+                                                <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="41W-yx-G7Y"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="YJZ-Jf-aW0"/>
+                                    </constraints>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="bHw-YO-fGm">
+                                    <rect key="frame" x="0.0" y="135" width="404" height="40"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RVD-Gt-bDT" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="40" id="xmb-tg-NDl"/>
+                                            </constraints>
+                                            <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <state key="normal" image="globe" catalog="system"/>
+                                            <connections>
+                                                <action selector="buttonGlobeAction:" destination="-1" eventType="touchUpInside" id="IR4-N0-zOH"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b6j-j0-TMC" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                            <rect key="frame" x="45" y="0.0" width="300" height="40"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <state key="normal" title="Space"/>
+                                            <connections>
+                                                <action selector="buttonSpaceAction:" destination="-1" eventType="touchUpInside" id="Dan-CJ-HmV"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gjs-yB-SIR" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                            <rect key="frame" x="350" y="0.0" width="54" height="40"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="54" id="tMf-il-Tn6"/>
+                                            </constraints>
+                                            <state key="normal" title="#+="/>
+                                            <state key="selected">
+                                                <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="buttonSymbolAction:" destination="-1" eventType="touchUpInside" id="HLZ-as-tO0"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="lb3-4z-CAk"/>
+                                    </constraints>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uVa-qm-ijJ">
+                            <rect key="frame" x="5" y="0.0" width="404" height="175"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="h0y-by-8Ss">
+                                    <rect key="frame" x="0.0" y="0.0" width="404" height="175"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="iDj-Ub-SEs">
+                                            <rect key="frame" x="0.0" y="0.0" width="404" height="40"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="79A-u2-O9r" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="40.5" height="40"/>
+                                                    <state key="normal" title="@"/>
+                                                    <connections>
+                                                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="wYu-nU-yZB"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k18-a7-slf" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                                    <rect key="frame" x="45.5" y="0.0" width="40.5" height="40"/>
+                                                    <state key="normal" title="#"/>
+                                                    <connections>
+                                                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="gD8-FS-bnc"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kxi-X0-0zY" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                                    <rect key="frame" x="91" y="0.0" width="40.5" height="40"/>
+                                                    <state key="normal" title="$"/>
+                                                    <connections>
+                                                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="c5K-mj-gmj"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dzm-zp-fsY" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                                    <rect key="frame" x="136.5" y="0.0" width="40.5" height="40"/>
+                                                    <state key="normal" title="%"/>
+                                                    <connections>
+                                                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="Pk6-Lp-u4M"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uYe-1W-De4" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                                    <rect key="frame" x="182" y="0.0" width="40" height="40"/>
+                                                    <state key="normal" title="&amp;"/>
+                                                    <connections>
+                                                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="Sjv-B4-8HM"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIT-Fi-uf1" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                                    <rect key="frame" x="227" y="0.0" width="40.5" height="40"/>
+                                                    <state key="normal" title="*"/>
+                                                    <connections>
+                                                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="Flw-vx-jPt"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Vb-lp-uy2" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                                    <rect key="frame" x="272.5" y="0.0" width="40.5" height="40"/>
+                                                    <state key="normal" title="("/>
+                                                    <connections>
+                                                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="Xun-pT-ong"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rOu-SN-e7Q" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                                    <rect key="frame" x="318" y="0.0" width="40.5" height="40"/>
+                                                    <state key="normal" title=")"/>
+                                                    <connections>
+                                                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="Zfz-Uf-GlU"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d6c-aw-x5I" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                                    <rect key="frame" x="363.5" y="0.0" width="40.5" height="40"/>
+                                                    <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <state key="normal" image="delete.left" catalog="system"/>
+                                                    <connections>
+                                                        <action selector="buttonBackspaceAction:" destination="-1" eventType="touchUpInside" id="6HF-DN-ZsX"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="hBe-AH-4hp"/>
+                                            </constraints>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="NMr-8a-e5b">
+                                            <rect key="frame" x="0.0" y="45" width="404" height="40"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SFa-CC-YbY" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="40.5" height="40"/>
+                                                    <state key="normal" title="_"/>
+                                                    <connections>
+                                                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="1Kf-4G-7Xo"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5bq-tz-W4L" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                                    <rect key="frame" x="45.5" y="0.0" width="40.5" height="40"/>
+                                                    <state key="normal" title="-"/>
+                                                    <connections>
+                                                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="Ji1-RG-Djt"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k68-RE-X4w" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                                    <rect key="frame" x="91" y="0.0" width="40.5" height="40"/>
+                                                    <state key="normal" title="+"/>
+                                                    <connections>
+                                                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="UL2-w1-RvY"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ocF-Ya-mqM" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                                    <rect key="frame" x="136.5" y="0.0" width="40.5" height="40"/>
+                                                    <state key="normal" title="="/>
+                                                    <connections>
+                                                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="TlR-07-Qpu"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NLf-K0-hXc" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                                    <rect key="frame" x="182" y="0.0" width="40" height="40"/>
+                                                    <state key="normal" title="["/>
+                                                    <connections>
+                                                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="Ejv-NF-Doi"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3dg-kb-Tx8" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                                    <rect key="frame" x="227" y="0.0" width="40.5" height="40"/>
+                                                    <state key="normal" title="]"/>
+                                                    <connections>
+                                                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="Zd7-kq-lYJ"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ERI-CB-cAV" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                                    <rect key="frame" x="272.5" y="0.0" width="40.5" height="40"/>
+                                                    <state key="normal" title="{"/>
+                                                    <connections>
+                                                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="wb6-5b-CPN"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Rf-Nx-v3t" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                                    <rect key="frame" x="318" y="0.0" width="40.5" height="40"/>
+                                                    <state key="normal" title="}"/>
+                                                    <connections>
+                                                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="M04-lx-Nbm"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VmC-fl-BQj" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                                    <rect key="frame" x="363.5" y="0.0" width="40.5" height="40"/>
+                                                    <state key="normal" title="\"/>
+                                                    <connections>
+                                                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="50h-86-09j"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="3fK-9r-2HF"/>
+                                            </constraints>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="hDD-EW-UiN">
+                                            <rect key="frame" x="0.0" y="90" width="404" height="40"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TRm-Cp-e7C" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="40.5" height="40"/>
+                                                    <state key="normal" title="'"/>
+                                                    <connections>
+                                                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="wLb-Ql-Ofi"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wGs-6i-hcQ" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                                    <rect key="frame" x="45.5" y="0.0" width="40.5" height="40"/>
+                                                    <state key="normal" title="&quot;"/>
+                                                    <connections>
+                                                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="Vae-uD-Ih7"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvh-1V-soG" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                                    <rect key="frame" x="91" y="0.0" width="40.5" height="40"/>
+                                                    <state key="normal" title=","/>
+                                                    <connections>
+                                                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="vFU-yC-Izd"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jvg-Qq-Xye" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                                    <rect key="frame" x="136.5" y="0.0" width="40.5" height="40"/>
+                                                    <state key="normal" title="."/>
+                                                    <connections>
+                                                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="BLy-sZ-qLn"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hey-4y-EdV" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                                    <rect key="frame" x="182" y="0.0" width="40" height="40"/>
+                                                    <state key="normal" title="&lt;"/>
+                                                    <connections>
+                                                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="AG4-U6-uEJ"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BdQ-F1-9GE" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                                    <rect key="frame" x="227" y="0.0" width="40.5" height="40"/>
+                                                    <state key="normal" title="&gt;"/>
+                                                    <connections>
+                                                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="80R-Jy-Qrh"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dqg-av-sZb" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                                    <rect key="frame" x="272.5" y="0.0" width="40.5" height="40"/>
+                                                    <state key="normal" title="?"/>
+                                                    <connections>
+                                                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="kAf-86-Uqh"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJK-s1-GC8" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                                    <rect key="frame" x="318" y="0.0" width="40.5" height="40"/>
+                                                    <state key="normal" title="/"/>
+                                                    <connections>
+                                                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="Jgg-4z-AGS"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oU9-ZJ-jLO" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                                    <rect key="frame" x="363.5" y="0.0" width="40.5" height="40"/>
+                                                    <state key="normal" title="…"/>
+                                                    <connections>
+                                                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="bxS-in-PaY"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="LfB-wy-KV0"/>
+                                            </constraints>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="jBo-eo-ccK">
+                                            <rect key="frame" x="0.0" y="135" width="404" height="40"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JkY-jV-8sn" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="53.5" height="40"/>
+                                                    <state key="normal" title="!"/>
+                                                    <connections>
+                                                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="ZMd-dV-afz"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MXS-Kz-GQ0" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                                    <rect key="frame" x="58.5" y="0.0" width="53.5" height="40"/>
+                                                    <state key="normal" title="^"/>
+                                                    <connections>
+                                                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="gJd-QJ-eCv"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DVC-tg-I6U" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                                    <rect key="frame" x="117" y="0.0" width="53.5" height="40"/>
+                                                    <state key="normal" title=" £"/>
+                                                    <connections>
+                                                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="sD2-nB-qOR"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wLo-EP-AqH" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                                    <rect key="frame" x="175.5" y="0.0" width="53" height="40"/>
+                                                    <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <state key="normal" title="¥">
+                                                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="Eos-k2-NfK"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BlB-Ea-FcW" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                                    <rect key="frame" x="233.5" y="0.0" width="53.5" height="40"/>
+                                                    <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <state key="normal" title="|">
+                                                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="5Ao-St-nxI"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ho-EX-yNI" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                                    <rect key="frame" x="292" y="0.0" width="53.5" height="40"/>
+                                                    <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <state key="normal" title=";">
+                                                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="Wfe-Dg-smY"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DlR-6z-rEv" customClass="KeyboardButton" customModule="KHS" customModuleProvider="target">
+                                                    <rect key="frame" x="350.5" y="0.0" width="53.5" height="40"/>
+                                                    <state key="normal" title=":"/>
+                                                    <connections>
+                                                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="kfJ-Ds-joa"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="bjI-Q6-kk7"/>
+                                            </constraints>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstItem="h0y-by-8Ss" firstAttribute="leading" secondItem="uVa-qm-ijJ" secondAttribute="leading" id="45F-Id-bs3"/>
+                                <constraint firstItem="h0y-by-8Ss" firstAttribute="top" secondItem="uVa-qm-ijJ" secondAttribute="top" id="8em-Hs-KbV"/>
+                                <constraint firstAttribute="bottom" secondItem="h0y-by-8Ss" secondAttribute="bottom" id="i6Z-eP-fxg"/>
+                                <constraint firstAttribute="trailing" secondItem="h0y-by-8Ss" secondAttribute="trailing" id="rxq-cR-xuc"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="uVa-qm-ijJ" firstAttribute="top" secondItem="zwc-px-fY8" secondAttribute="top" id="56z-JF-kLA"/>
+                        <constraint firstItem="LxV-Xv-1zg" firstAttribute="top" secondItem="V78-WJ-pV5" secondAttribute="bottom" constant="5" id="C10-MT-f8j"/>
+                        <constraint firstItem="uVa-qm-ijJ" firstAttribute="leading" secondItem="zwc-px-fY8" secondAttribute="leading" constant="5" id="FvO-jv-pJE"/>
+                        <constraint firstItem="V78-WJ-pV5" firstAttribute="leading" secondItem="zwc-px-fY8" secondAttribute="leading" constant="5" id="Ig0-l4-INM"/>
+                        <constraint firstAttribute="trailing" secondItem="LxV-Xv-1zg" secondAttribute="trailing" constant="5" id="M2f-Wd-kNe"/>
+                        <constraint firstAttribute="trailing" secondItem="V78-WJ-pV5" secondAttribute="trailing" constant="5" id="PNw-54-2IN"/>
+                        <constraint firstAttribute="trailing" secondItem="uVa-qm-ijJ" secondAttribute="trailing" constant="5" id="QBh-JQ-src"/>
+                        <constraint firstAttribute="bottom" secondItem="uVa-qm-ijJ" secondAttribute="bottom" constant="45" id="ezf-r1-fH2"/>
+                        <constraint firstAttribute="bottom" secondItem="LxV-Xv-1zg" secondAttribute="bottom" id="hWf-0a-InX"/>
+                        <constraint firstItem="LxV-Xv-1zg" firstAttribute="leading" secondItem="zwc-px-fY8" secondAttribute="leading" constant="5" id="smG-ZB-UwG"/>
+                        <constraint firstItem="V78-WJ-pV5" firstAttribute="top" secondItem="zwc-px-fY8" secondAttribute="top" id="yx8-sw-2bv"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="zwc-px-fY8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="c0h-xv-vCP"/>
+                <constraint firstItem="zwc-px-fY8" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="dEt-bL-LAA"/>
+                <constraint firstItem="zwc-px-fY8" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="h96-s1-PS7"/>
+                <constraint firstItem="zwc-px-fY8" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="xbC-80-eRF"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="157.97101449275362" y="105.80357142857143"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="delete.left" catalog="system" width="64" height="52"/>
+        <image name="globe" catalog="system" width="64" height="60"/>
+        <image name="return" catalog="system" width="64" height="50"/>
+        <image name="shift" catalog="system" width="64" height="52"/>
+        <image name="shift.fill" catalog="system" width="64" height="52"/>
+    </resources>
+</document>
